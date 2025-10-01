@@ -42,6 +42,7 @@
           <!-- <p class="mb-2 align-items-center clr_wt">Darrin Bright<br> Grad Student @ UWaterloo <br>Systems Engineering</p> -->
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-home fa-xs" aria-hidden="true"></i> About</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><i class="fa fa-graduation-cap fa-xs" aria-hidden="true"></i> Education</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research"><i class="fa fa-book-open fa-xs" aria-hidden="true"></i> Research</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><i class="fa fa-briefcase fa-xs" aria-hidden="true"></i> Experience</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><i class="fa fa-level-up fa-xs" style="font-size: 0.9em;" aria-hidden="true"></i> Skills</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects"><i class="fa fa-flask fa-xs" aria-hidden="true"></i> Projects</a></li>
@@ -127,7 +128,7 @@
           </div>
           <div class="experience-text">
             <strong>Courses: </strong> Artificial Intelligence, Machine Learning, Natural Language Processing, Data Mining, Computer Networks, Data Structures and Algorithms, Database Management Systems, Operating Systems, Python Programming, Object Oriented Programming.<br>
-            <strong>CGPA: </strong> 8.99/10<br>
+            <strong>CGPA: </strong> 8.83/10<br>
           </div>
         </div>
         <div class="resume-date text-md-right">
@@ -142,11 +143,87 @@
 
   <hr class="m-0 mb-2" />
 
+  <!-- ################################ RESEARCH ################################-->
+
+  <section class="success p-3 p-lg-4" id="research">
+    <div class="container">
+
+      <div class="row">
+        <h2 class="mb-3">Research</h2>
+      </div>
+
+      <div class="row pub-mar" style="margin-bottom: 10px;">
+        <div class="col-sm-3 hidden-xs">
+          <img class="pub-img1" src="img/pdf.png" alt="" style="width: 220px; height: 120px;">
+        </div>
+        <div class="col-sm-9 mb-3">        
+          <h4 class="pubt">Cross-Modal Feature Distillation for Food Portion Estimation</h4>
+          <h4 class="puba">First Author | Advisor: Dr. Kanchan Keisham | Manuscript in preparation</h4> 
+          <div class="pubv">
+            <li>Developed a dual-encoder architecture combining ViT-B and ResNet-18 for RGB feature extraction with PointNet for 3D understanding.</li>
+            <li>Introduced an RGB-to-point cloud feature adapter using knowledge distillation, enabling cross-modal feature learning between 2D and 3D representations.</li>
+            <li>Achieved state-of-the-art results on MetaFood3D with 26.87% volume MAPE and 24.89% energy MAPE, outperforming previous best methods by 65% and strong cross-dataset generalization on SimpleFood45.</li>
+          </div>
+          <div class="publ">
+            <ul>
+              <!-- <li><a target="_blank" href="">PDF</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pub-mar" style="margin-bottom: 10px;">
+        <div class="col-sm-3 hidden-xs">
+          <img class="pub-img1" src="img/XAI.jpg" alt="" style="width: 220px; height: 120px;">
+        </div>
+        <div class="col-sm-9 mb-3">        
+          <h4 class="pubt">Explainable AI for Kidney Disease Classification from CT Scans</h4>
+          <h4 class="puba">First Author | Advisor: Dr. Praveen Kumar | Manuscript near completion</h4> 
+          <div class="pubv">  
+            <li>Designed a dynamic weighted ensemble architecture combining MobileNetV2, ResNet-50 and EfficientNet-B1 for Multi class kidney disease classification on 12,446 CT images.</li>
+            <li>Implemented explainability framework using Grad-CAM and LIME with medical-specific augmentations for clinical decision support.</li>
+            <li>Achieved 99.14% test accuracy across four diagnostic categories using focal loss with label smoothing.</li>
+          </div>
+          <div class="publ">
+            <ul>
+              <!-- <li><a target="_blank" href="">PDF</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <hr class="m-0 mb-2" />
+  
 <!-- ################################ EXPERIENCE ################################-->
 
 <section id="experience" class="p-3 p-lg-4">
 
   <h2 class="mb-3">Experience</h2>
+
+  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+    <div class="resume-content">
+      <a href="https://iitj.ac.in/" target="_blank">
+        <h3 class="mb-0 hvr-underline-from-center hvr-wobble-horizontal">
+          <span class="text-primary">Indian Institute of Technology, Jodhpur - </span> Jodhpur, India
+        </h3>
+      </a>
+      <div class="subheading">Research Intern</div>
+      <div class="experience-text">
+        <li>Developed a self-supervised learning framework for 3D medical image segmentation using Swin Transformers, utilizing BYOL for pretraining on unlabeled volumetric CT scans.</li>
+        <li>Incorporated vector quantization into the encoder for discrete representation learning and enhanced segmentation performance.</li>
+      </div>
+    </div>
+    <div class="resume-date text-md-right" style="white-space: nowrap; width: 170px;">
+      <span class="text-primary experience-time" style="font-size: 0.9em;">May 2025 - July 2025</span>
+      <div style="margin-top: 10px;">
+        <div class="brk">
+          <img srcset="img/IITJ.jpeg" class="hov" width="130" height="130" alt="IIT Jodhpur Logo" /><br>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
     <div class="resume-content">
