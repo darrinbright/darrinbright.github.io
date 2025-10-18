@@ -244,34 +244,6 @@
           </div>
         </div>
 
-        <div class="row pub-mar" style="margin-bottom: 10px;">
-          <div class="col-sm-3 hidden-xs">
-            <img class="pub-img1" src="img/IITJ.jpeg" alt="" style="width: 220px; height: 120px;">
-          </div>
-          <div class="col-sm-9 mb-3">
-            <h4 class="pubt">Semantic Segmentation with Swin Transformers and Vector Quantization</h4>
-            <h4 class="puba">Indian Institute of Technology, Jodhpur | Advised by Dr. Deepak Mishra | May 2025 - July
-              2025</h4>
-            <div class="pubv">
-              <li>Conducted systematic 13-experiment ablation study investigating vector quantization integration in
-                transformer-based semantic segmentation on Pascal VOC 2012 dataset (1,464 training images, 1,449
-                validation images).</li>
-              <li>Designed architecture combining Swin-Large encoder with EMA-based vector quantization modules at 4
-                feature scales, implementing learnable fusion mechanisms (concatenation vs. addition) and
-                attention-gated decoder.</li>
-              <li>Achieved 73.41% mIoU through optimized configuration (VQ dim=128, codebook size=1024, commitment
-                cost=0.5), demonstrating +7.12% improvement over baseline CNN and +2.73% over vanilla Swin Transformer.
-              </li>
-              <li>Implemented GPU-accelerated K-means initialization for codebook learning, reducing training time by
-                60% while improving convergence stability and codebook perplexity across all encoder levels.</li>
-            </div>
-            <div class="publ">
-              <ul>
-              </ul>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
     <hr class="m-0 mb-2" />
@@ -291,7 +263,10 @@
           </a>
           <div class="subheading">Research Intern</div>
           <div class="experience-text">
-            Advised by Dr. Deepak Mishra on self-supervised learning and semantic segmentation for medical imaging.
+            <li>Developed multi-stage self-supervised learning framework with Multi-Group Vector Quantization for
+              medical image segmentation, achieving 79.21% Dice score on skin lesion segmentation.</li>
+            <li>Conducted systematic 13-experiment ablation study on Swin Transformers with vector quantization for
+              semantic segmentation, achieving 73.41% mIoU on Pascal VOC 2012 dataset.</li>
           </div>
         </div>
         <div class="resume-date text-md-right" style="white-space: nowrap; width: 170px;">
