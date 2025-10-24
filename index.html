@@ -174,7 +174,7 @@
             <img class="pub-img1" src="img/stock.png" alt="" style="width: 220px; height: 120px;">
           </div>
           <div class="col-sm-9 mb-3">
-            <h4 class="pubt">Cross-Modal Feature Distillation for Food Portion Estimation</h4>
+            <h4 class="pubt">FoodNet: Bridging RGB and 3D Understanding for Food Portion and Nutrition Estimation</h4>
             <h4 class="puba">First Author | Advisor: Dr. Kanchan Keisham | Manuscript in preparation</h4>
             <div class="pubv">
               <li>Developed a dual-encoder architecture combining ViT-B and ResNet-18 for RGB feature extraction with
@@ -197,7 +197,7 @@
             <img class="pub-img1" src="img/XAI.jpg" alt="" style="width: 220px; height: 120px;">
           </div>
           <div class="col-sm-9 mb-3">
-            <h4 class="pubt">Explainable AI for Kidney Disease Classification from CT Scans</h4>
+            <h4 class="pubt">EExplainable AI Framework for Kidney Pathology Classification from CT Scans</h4>
             <h4 class="puba">First Author | Advisor: Dr. Praveen Kumar | Manuscript near completion</h4>
             <div class="pubv">
               <li>Designed a dynamic weighted ensemble architecture combining MobileNetV2, ResNet-50 and EfficientNet-B1
@@ -217,22 +217,20 @@
 
         <div class="row pub-mar" style="margin-bottom: 10px;">
           <div class="col-sm-3 hidden-xs">
-            <img class="pub-img1" src="img/pdf.png" alt="" style="width: 220px; height: 120px;">
+            <img class="pub-img1" src="img/SSL.jpg" alt="" style="width: 220px; height: 120px;">
           </div>
           <div class="col-sm-9 mb-3">
             <h4 class="pubt">Self-Supervised Medical Image Segmentation with Vector Quantization</h4>
             <h4 class="puba">Indian Institute of Technology, Jodhpur | Advised by Dr. Deepak Mishra | May 2025 - July
               2025</h4>
             <div class="pubv">
-              <li>Developed multi-stage self-supervised learning framework integrating vector quantization with
-                contrastive learning for medical image segmentation, pre-training on unlabeled images and fine-tuning on
-                limited labeled samples.</li>
-              <li>Engineered Multi-Group Vector Quantization architecture with 4 codebook groups and designed matched
-                projection layers between training stages, enabling stable discrete representation learning without
-                gradient collapse.</li>
-              <li>Achieved 79.21% Dice score and 90.06% mIoU on skin lesion segmentation using only 500 labeled samples,
-                demonstrating +4.1% improvement over supervised baseline and validating self-supervised approach
-                effectiveness.</li>
+              <li>Developed a hierarchical vector quantization framework that addresses limited labeled data in medical
+                imaging by learning discrete representations from unlabeled images and using them as structured regu-
+                larizers during segmentation fine-tuning</li>
+              <li>Designed three-stage training pipeline integrating VQ-VAE, SimCLR contrastive learning and segmenta-
+                tion fine-tuning, with multi-layer quantization capturing features across semantic scales.</li>
+              <li>Achieved 79.76% Dice score with +1.38% consistent improvement across multiple runs, demonstrating
+                the effectiveness of discrete representations as regularizers for medical imaging with limited labeled data</li>
             </div>
             <div class="publ">
               <ul>
@@ -258,14 +256,16 @@
               <span class="text-primary">Indian Institute of Technology, Jodhpur - </span> Jodhpur, India
             </h3>
           </a>
-          <div class="subheading">Research Intern</div>
+          <div class="subheading">Research Intern</div> 
           <div class="experience-text">
-            <li>Developed multi-stage self-supervised learning framework with Multi-Group Vector Quantization for
-              medical image segmentation, achieving 79.21% Dice score on skin lesion segmentation.</li>
-            <li>Conducted systematic 13-experiment ablation study investigating vector quantization integration in Swin
-              Transformer-based semantic segmentation on Pascal VOC 2012 dataset.</li>
-            <li>Achieved 73.41% mIoU through optimized architecture combining Swin-Large encoder with EMA-based vector
-              quantization, demonstrating +7.12% improvement over baseline CNN and +2.73% over vanilla Swin Transformer.
+            <li>Developed multi-stage self-supervised learning framework with hierarchical Vector Quantization for
+              medical image segmentation, achieving 79.76% Dice score on skin lesion segmentation.</li>
+            <li>Conducted 13-experiment ablation study on Pascal VOC 2012 dataset investigating vector quantization
+              integration with Swin Transformer encoders, testing codebook configurations, fusion mechanisms and
+              initialization strategies.</li>
+            <li>Achieved 74.61% Dice score with optimized vector quantization configuration on Pascal VOC 2012,
+              demonstrating +7.34% improvement over baseline CNN and +3.91% over vanilla Swin Transformer,
+              validating VQ effectiveness for semantic segmentation tasks
             </li>
           </div>
         </div>
