@@ -48,6 +48,8 @@
               class="fa fa-graduation-cap fa-xs" aria-hidden="true"></i> Education</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research"><i class="fa fa-book-open fa-xs"
               aria-hidden="true"></i> Research</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications"><i class="fa fa-file-alt fa-xs"
+              aria-hidden="true"></i> Publications</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><i class="fa fa-briefcase fa-xs"
               aria-hidden="true"></i> Experience</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><i class="fa fa-level-up fa-xs"
@@ -174,7 +176,7 @@
             <img class="pub-img1" src="img/FoodNet.jpg" alt="" style="width: 220px; height: 120px;">
           </div>
           <div class="col-sm-9 mb-3">
-            <h4 class="pubt">FoodNet: Bridging RGB and 3D Understanding for Food Portion and Nutrition Estimation</h4>
+            <h4 class="pubt">PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation</h4>
             <h4 class="puba">Advisor: Dr. Kanchan Keisham | Manuscript in preparation</h4>
             <div class="pubv">
               <li>Developed a dual-encoder architecture combining ViT-B and ResNet-18 for RGB feature extraction with
@@ -197,12 +199,14 @@
             <img class="pub-img1" src="img/XAI.jpg" alt="" style="width: 220px; height: 120px;">
           </div>
           <div class="col-sm-9 mb-3">
-            <h4 class="pubt">Explainable AI Framework for Kidney Pathology Classification from CT Scans</h4>
-            <h4 class="puba">Advisor: Dr. Praveen Kumar | Manuscript near completion</h4>
+            <h4 class="pubt">Explainable Transfer Learning Ensemble with Dynamic Weighting for Kidney Disease
+              Classification in CT Images</h4>
+            <h4 class="puba">Advisor: Dr. Praveen Kumar | Submitted to Elsevier (Array)</h4>
             <div class="pubv">
               <li>Designed a dynamic weighted ensemble architecture combining MobileNetV2, ResNet-50 and EfficientNet-B1
                 for multi-class kidney disease classification on 12,446 CT images.</li>
-              <li>Implemented an explainability framework using Grad-CAM and LIME with medical-specific augmentations for
+              <li>Implemented an explainability framework using Grad-CAM and LIME with medical-specific augmentations
+                for
                 clinical decision support.</li>
               <li>Achieved 99.14% test accuracy across four diagnostic categories using focal loss with label smoothing.
               </li>
@@ -230,7 +234,8 @@
               <li>Designed three-stage training pipeline integrating VQ-VAE, SimCLR contrastive learning and segmenta-
                 tion fine-tuning, with multi-layer quantization capturing features across semantic scales.</li>
               <li>Achieved 79.76% Dice score with +1.38% consistent improvement across multiple runs, demonstrating
-                the effectiveness of discrete representations as regularizers for medical imaging with limited labeled data</li>
+                the effectiveness of discrete representations as regularizers for medical imaging with limited labeled
+                data</li>
             </div>
             <div class="publ">
               <ul>
@@ -238,6 +243,46 @@
             </div>
           </div>
         </div>
+
+      </div>
+    </section>
+    <hr class="m-0 mb-2" />
+
+    <!-- ################################ PUBLICATIONS ################################-->
+
+    <section class="success p-3 p-lg-4" id="publications">
+      <div class="container">
+
+        <div class="row">
+          <h2 class="mb-3">Publications</h2>
+        </div>
+
+        <ol class="publication-list" style="list-style: none; padding-left: 0; text-align: left;">
+          <li class="pub-item mb-4">
+            <div class="pub-title" style="font-weight: bold; font-size: 1.15rem; margin-bottom: 0.3rem;">
+              PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation
+            </div>
+            <div class="pub-authors" style="margin-bottom: 0.2rem;">
+              <strong>Darrin Bright</strong>, Rakshith Raj, Dr. Kanchan Keisham
+            </div>
+            <div class="pub-venue" style="font-style: italic; color: #6c757d;">
+              Manuscript in preparation
+            </div>
+          </li>
+
+          <li class="pub-item mb-4">
+            <div class="pub-title" style="font-weight: bold; font-size: 1.15rem; margin-bottom: 0.3rem;">
+              Explainable Transfer Learning Ensemble with Dynamic Weighting for Kidney Disease Classification in CT
+              Images
+            </div>
+            <div class="pub-authors" style="margin-bottom: 0.2rem;">
+              <strong>Darrin Bright</strong>, Dr. Praveen Kumar
+            </div>
+            <div class="pub-venue" style="font-style: italic; color: #6c757d;">
+              Submitted to Elsevier (Array)
+            </div>
+          </li>
+        </ol>
 
       </div>
     </section>
@@ -256,7 +301,7 @@
               <span class="text-primary">Indian Institute of Technology, Jodhpur - </span> Jodhpur, India
             </h3>
           </a>
-          <div class="subheading">Research Intern</div> 
+          <div class="subheading">Research Intern</div>
           <div class="experience-text">
             <li>Developed multi-stage self-supervised learning framework with hierarchical Vector Quantization for
               medical image segmentation, achieving 79.76% Dice score on skin lesion segmentation.</li>
@@ -727,8 +772,3 @@
 </body>
 
 </html>
-
-
-
-
-
