@@ -179,12 +179,12 @@
             <h4 class="pubt">PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation</h4>
             <h4 class="puba">Advisor: Dr. Kanchan Keisham | Under review at CVIS 2025</h4>
             <div class="pubv">
-              <li>Developed a dual-encoder architecture combining ViT-B and ResNet-18 for RGB feature extraction with
-                PointNet for 3D understanding.</li>
-              <li>Introduced an RGB-to-point cloud feature adapter using knowledge distillation, enabling cross-modal
-                feature learning between 2D and 3D representations.</li>
-              <li>Achieved state-of-the-art results on MetaFood3D with 26.87% volume MAPE and 24.89% energy MAPE,
-                outperforming previous best methods by 65% and strong cross-dataset generalization on SimpleFood45.</li>
+              <li>Developed PortionNet, a novel cross-modal knowledge distillation framework that allows RGB models to learn
+                3D geometric features from point clouds during training, eliminating depth sensor requirements at inference</li>
+              <li>Designed a dual-mode training strategy with a lightweight RGB-to-Geometry Adapter that learns to generate
+                pseudo-3D features for accurate geometric reasoning from a standard RGB image.</li>
+              <li>Achieved state-of-the-art performance on MetaFood3D dataset with 17.43% volume MAPE and 15.36% energy MAPE, 
+                representing 57.9% and 77.4% relative improvements over previous RGB-only methods.</li>
             </div>
             <div class="publ">
               <ul>
@@ -772,3 +772,4 @@
 </body>
 
 </html>
+
