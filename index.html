@@ -46,10 +46,10 @@
               aria-hidden="true"></i> About</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><i
               class="fa fa-graduation-cap fa-xs" aria-hidden="true"></i> Education</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research"><i class="fa fa-book-open fa-xs"
-              aria-hidden="true"></i> Research</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications"><i class="fa fa-file-alt fa-xs"
               aria-hidden="true"></i> Publications</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research"><i class="fa fa-book-open fa-xs"
+              aria-hidden="true"></i> Research</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><i class="fa fa-briefcase fa-xs"
               aria-hidden="true"></i> Experience</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><i class="fa fa-level-up fa-xs"
@@ -162,6 +162,46 @@
 
     <hr class="m-0 mb-2" />
 
+    <!-- ################################ PUBLICATIONS ################################-->
+
+    <section class="success p-3 p-lg-4" id="publications">
+      <div class="container">
+
+        <div class="row">
+          <h2 class="mb-3">Publications</h2>
+        </div>
+
+        <ol class="publication-list" style="list-style: none; padding-left: 0; text-align: left;">
+          <li class="pub-item mb-4">
+            <div class="pub-title" style="font-weight: bold; font-size: 1.15rem; margin-bottom: 0.3rem;">
+              PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation
+            </div>
+            <div class="pub-authors" style="margin-bottom: 0.2rem;">
+              <strong>Darrin Bright</strong>, Rakshith Raj, Dr. Kanchan Keisham
+            </div>
+            <div class="pub-venue" style="font-style: italic; color: #6c757d;">
+              Under review at CVIS 2025
+            </div>
+          </li>
+
+          <li class="pub-item mb-4">
+            <div class="pub-title" style="font-weight: bold; font-size: 1.15rem; margin-bottom: 0.3rem;">
+              Explainable Transfer Learning Ensemble with Dynamic Weighting for Kidney Disease Classification in CT
+              Images
+            </div>
+            <div class="pub-authors" style="margin-bottom: 0.2rem;">
+              <strong>Darrin Bright</strong>, Dr. Praveen Kumar
+            </div>
+            <div class="pub-venue" style="font-style: italic; color: #6c757d;">
+              Under review at Elsevier (Array)
+            </div>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+    <hr class="m-0 mb-2" />
+
     <!-- ################################ RESEARCH ################################-->
 
     <section class="success p-3 p-lg-4" id="research">
@@ -179,12 +219,12 @@
             <h4 class="pubt">PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation</h4>
             <h4 class="puba">Advisor: Dr. Kanchan Keisham | Under review at CVIS 2025</h4>
             <div class="pubv">
-              <li>Developed PortionNet, a novel cross-modal knowledge distillation framework that allows RGB models to learn
-                3D geometric features from point clouds during training, eliminating depth sensor requirements at inference.</li>
-              <li>Designed a dual-mode training strategy with a lightweight RGB-to-Geometry Adapter that learns to generate
-                pseudo-3D features for accurate geometric reasoning from a standard RGB image.</li>
-              <li>Achieved state-of-the-art performance on MetaFood3D dataset with 17.43% volume MAPE and 15.36% energy MAPE, 
-                representing 57.9% and 77.4% relative improvements over previous RGB-only methods.</li>
+              <li>Developed a dual-encoder architecture combining ViT-B and ResNet-18 for RGB feature extraction with
+                PointNet for 3D understanding.</li>
+              <li>Introduced an RGB-to-point cloud feature adapter using knowledge distillation, enabling cross-modal
+                feature learning between 2D and 3D representations.</li>
+              <li>Achieved state-of-the-art results on MetaFood3D with 26.87% volume MAPE and 24.89% energy MAPE,
+                outperforming previous best methods by 65% and strong cross-dataset generalization on SimpleFood45.</li>
             </div>
             <div class="publ">
               <ul>
@@ -243,46 +283,6 @@
             </div>
           </div>
         </div>
-
-      </div>
-    </section>
-    <hr class="m-0 mb-2" />
-
-    <!-- ################################ PUBLICATIONS ################################-->
-
-    <section class="success p-3 p-lg-4" id="publications">
-      <div class="container">
-
-        <div class="row">
-          <h2 class="mb-3">Publications</h2>
-        </div>
-
-        <ol class="publication-list" style="list-style: none; padding-left: 0; text-align: left;">
-          <li class="pub-item mb-4">
-            <div class="pub-title" style="font-weight: bold; font-size: 1.15rem; margin-bottom: 0.3rem;">
-              PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation
-            </div>
-            <div class="pub-authors" style="margin-bottom: 0.2rem;">
-              <strong>Darrin Bright</strong>, Rakshith Raj, Dr. Kanchan Keisham
-            </div>
-            <div class="pub-venue" style="font-style: italic; color: #6c757d;">
-              Under review at CVIS 2025
-            </div>
-          </li>
-
-          <li class="pub-item mb-4">
-            <div class="pub-title" style="font-weight: bold; font-size: 1.15rem; margin-bottom: 0.3rem;">
-              Explainable Transfer Learning Ensemble with Dynamic Weighting for Kidney Disease Classification in CT
-              Images
-            </div>
-            <div class="pub-authors" style="margin-bottom: 0.2rem;">
-              <strong>Darrin Bright</strong>, Dr. Praveen Kumar
-            </div>
-            <div class="pub-venue" style="font-style: italic; color: #6c757d;">
-              Under review at Elsevier (Array)
-            </div>
-          </li>
-        </ol>
 
       </div>
     </section>
@@ -772,5 +772,3 @@
 </body>
 
 </html>
-
-
