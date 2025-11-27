@@ -78,31 +78,31 @@
           <div class="">
             <p class="lead-bio mb-3 text-justify">
 
-              <b>Biography:</b> My research interests lie at the intersection of representation learning and multimodal
-              visual understanding. I'm particularly drawn to problems where neural networks need to learn from limited
+              <b>Biography:</b> My research interests lie at the intersection of representation learning and vision. I'm
+              particularly drawn to problems where neural networks need to learn from limited
               supervision, bridge different data modalities, or extract structured knowledge from visual data.
               <br><br>
 
               Currently, I'm exploring self-supervised learning for medical imaging, where I've been investigating how
-              vector quantization and contrastive methods can learn meaningful representations from unlabeled data. I've
-              worked on cross-modal learning, Explainable AI for clinical decision support, and semantic segmentation
-              with transformer
-              architectures. What connects these projects is a focus on making deep learning more data-efficient and
-              interpretable.
+              vector quantization and non-contrastive methods can learn meaningful representations from unlabeled data.
+              I've worked on cross-modal learning, Explainable AI for clinical decision support, and semantic
+              segmentation with transformer architectures. What connects these projects is a focus on making deep
+              learning more data-efficient and interpretable.
 
             <p class="lead">
               <strong>Core Interests:</strong>
             </p>
             <ul class="lead list-group list-group-flush mb-3">
               <li class="list-group-item hvr-hang">
+                <i class="fas fa-eye"></i>&nbsp;&nbsp;3D Vision
+              </li>
+              <li class="list-group-item hvr-hang">
                 <i class="fas fa-heartbeat"></i>&nbsp;&nbsp;Medical Imaging
               </li>
               <li class="list-group-item hvr-hang">
                 <i class="fas fa-brain"></i>&nbsp;&nbsp;Representation Learning
               </li>
-              <li class="list-group-item hvr-hang">
-                <i class="fas fa-eye"></i>&nbsp;&nbsp;Multimodal Visual Understanding
-              </li>
+
             </ul>
             <div class="social-icons">
               <a href="mailto:darriebright@gmail.com" target="_blank">
@@ -177,10 +177,10 @@
               PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation
             </div>
             <div class="pub-authors">
-              <strong>Darrin Bright</strong>, Rakshith Raj, Dr. Kanchan Keisham
+              <strong>Darrin Bright</strong>, Rakshith Raj, Kanchan Keisham
             </div>
             <div class="pub-venue">
-              Under review at CVIS 2025
+              Under review, Conference on Vision and Intelligent Systems 2025
             </div>
           </li>
 
@@ -190,10 +190,10 @@
               Images
             </div>
             <div class="pub-authors">
-              <strong>Darrin Bright</strong>, Dr. Praveen Kumar
+              <strong>Darrin Bright</strong>, Praveen Kumar
             </div>
             <div class="pub-venue">
-              Under review at Elsevier (Array)
+              Under review, Biomedical Signal Processing and Control (Elsevier)
             </div>
           </li>
         </ol>
@@ -217,14 +217,17 @@
           </div>
           <div class="col-sm-9 mb-3">
             <h4 class="pubt">PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation</h4>
-            <h4 class="puba">Advisor: Dr. Kanchan Keisham | Under review at CVIS 2025</h4>
+            <h4 class="puba">Advisor: Dr. Kanchan Keisham | Vellore Institute of Technology, Vellore | July 2025 -
+              November 2025</h4>
             <div class="pubv">
-              <li>Developed a dual-encoder architecture combining ViT-B and ResNet-18 for RGB feature extraction with
-                PointNet for 3D understanding.</li>
-              <li>Introduced an RGB-to-point cloud feature adapter using knowledge distillation, enabling cross-modal
-                feature learning between 2D and 3D representations.</li>
-              <li>Achieved state-of-the-art results on MetaFood3D with 26.87% volume MAPE and 24.89% energy MAPE,
-                outperforming previous best methods by 65% and strong cross-dataset generalization on SimpleFood45.</li>
+              <li>Developed PortionNet, a novel cross-modal knowledge distillation framework that allows RGB models
+                to learn 3D geometric features from point clouds during training, eliminating depth sensor requirements
+                at inference.</li>
+              <li>Designed a dual-mode training strategy with a lightweight RGB-to-Geometry Adapter that learns to
+                generate pseudo-3D features for accurate geometric reasoning from a standard RGB image.</li>
+              <li>Achieved state-of-the-art performance on MetaFood3D dataset with 17.43% volume MAPE and 15.36%
+                energy MAPE. Cross-dataset evaluation on SimpleFood45 achieves state-of-the-art energy estimation
+                (12.17% MAPE), demonstrating effective generalization.</li>
             </div>
             <div class="publ">
               <ul>
@@ -241,14 +244,16 @@
           <div class="col-sm-9 mb-3">
             <h4 class="pubt">Explainable Transfer Learning Ensemble with Dynamic Weighting for Kidney Disease
               Classification in CT Images</h4>
-            <h4 class="puba">Advisor: Dr. Praveen Kumar | Under review at Elsevier (Biomedical Signal Processing and Control)</h4>
+            <h4 class="puba">Advisor: Dr. Praveen Kumar | Vellore Institute of Technology, Vellore | July 2025 -
+              November
+              2025</h4>
             <div class="pubv">
-              <li>Designed a dynamic weighted ensemble architecture combining MobileNetV2, ResNet-50 and EfficientNet-B1
-                for multi-class kidney disease classification on 12,446 CT images.</li>
-              <li>Implemented an explainability framework using Grad-CAM and LIME with medical-specific augmentations
-                for
-                clinical decision support.</li>
-              <li>Achieved 99.14% test accuracy across four diagnostic categories using focal loss with label smoothing.
+              <li>Designed a dynamic weighted ensemble combining MobileNetV2, ResNet-50, and EfficientNet-B1 for
+                multi-class kidney disease classification on 12,446 CT images across four diagnostic categories.</li>
+              <li>Implemented an explainability framework using Grad-CAM and LIME with domain-specific augmentations to
+                provide interpretable predictions for clinical decision support.</li>
+              <li>Achieved 99.14% test accuracy using focal loss with label smoothing, effectively addressing class
+                imbalance.
               </li>
             </div>
             <div class="publ">
@@ -269,8 +274,8 @@
               2025</h4>
             <div class="pubv">
               <li>Developed a hierarchical vector quantization framework that addresses limited labeled data in medical
-                imaging by learning discrete representations from unlabeled images and using them as structured regu-
-                larizers during segmentation fine-tuning</li>
+                imaging by learning discrete representations from unlabeled ISIC 2018 images and using them as
+                structured regularizers during segmentation fine-tuning on the PH2 dataset.</li>
               <li>Designed three-stage training pipeline integrating VQ-VAE, SimCLR contrastive learning and segmenta-
                 tion fine-tuning, with multi-layer quantization capturing features across semantic scales.</li>
               <li>Achieved 79.76% Dice score with +1.38% consistent improvement across multiple runs, demonstrating
@@ -304,7 +309,7 @@
           <div class="subheading">Research Intern</div>
           <div class="experience-text">
             <li>Developed multi-stage self-supervised learning framework with hierarchical Vector Quantization for
-              medical image segmentation, achieving 79.76% Dice score on skin lesion segmentation.</li>
+              medical image segmentation, achieving 79.76% Dice score on PH2 dataset.</li>
             <li>Conducted 13-experiment ablation study on Pascal VOC 2012 dataset investigating vector quantization
               integration with Swin Transformer encoders, testing codebook configurations, fusion mechanisms and
               initialization strategies.</li>
@@ -772,4 +777,3 @@
 </body>
 
 </html>
-
