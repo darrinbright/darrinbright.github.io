@@ -95,14 +95,13 @@
             </p>
             <ul class="lead list-group list-group-flush mb-3">
               <li class="list-group-item hvr-hang">
-                <i class="fas fa-eye"></i>&nbsp;&nbsp;3D Vision
-                
-              </li>
-              <li class="list-group-item hvr-hang">
                 <i class="fas fa-heartbeat"></i>&nbsp;&nbsp;Medical Imaging
               </li>
               <li class="list-group-item hvr-hang">
                 <i class="fas fa-brain"></i>&nbsp;&nbsp;Representation Learning
+              </li>
+              <li class="list-group-item hvr-hang">
+                <i class="fas fa-eye"></i>&nbsp;&nbsp;Multimodal Visual Understanding
               </li>
             </ul>
             <div class="social-icons">
@@ -174,27 +173,27 @@
 
         <ol class="publication-list" style="list-style: none; padding-left: 0; text-align: left;">
           <li class="pub-item mb-4">
-            <div class="pub-title" style="font-weight: bold; font-size: 1.15rem; margin-bottom: 0.3rem;">
+            <div class="pub-title">
               PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation
             </div>
-            <div class="pub-authors" style="margin-bottom: 0.2rem;">
+            <div class="pub-authors">
               <strong>Darrin Bright</strong>, Rakshith Raj, Dr. Kanchan Keisham
             </div>
-            <div class="pub-venue" style="font-style: italic; color: #6c757d;">
+            <div class="pub-venue">
               Under review at CVIS 2025
             </div>
           </li>
 
           <li class="pub-item mb-4">
-            <div class="pub-title" style="font-weight: bold; font-size: 1.15rem; margin-bottom: 0.3rem;">
+            <div class="pub-title">
               Explainable Transfer Learning Ensemble with Dynamic Weighting for Kidney Disease Classification in CT
               Images
             </div>
-            <div class="pub-authors" style="margin-bottom: 0.2rem;">
+            <div class="pub-authors">
               <strong>Darrin Bright</strong>, Dr. Praveen Kumar
             </div>
-            <div class="pub-venue" style="font-style: italic; color: #6c757d;">
-              Under review at Elsevier (Biomedical Signal Processing and Control)
+            <div class="pub-venue">
+              Under review at Elsevier (Array)
             </div>
           </li>
         </ol>
@@ -218,15 +217,14 @@
           </div>
           <div class="col-sm-9 mb-3">
             <h4 class="pubt">PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation</h4>
-            <h4 class="puba">Advisor: Dr. Kanchan Keisham</h4>
+            <h4 class="puba">Advisor: Dr. Kanchan Keisham | Under review at CVIS 2025</h4>
             <div class="pubv">
-              <li>Developed PortionNet, a novel cross-modal knowledge distillation framework that allows RGB models to
-                learn 3D geometric features from point clouds during training, eliminating depth sensor requirements at
-                inference.</li>
-              <li>Designed a dual-mode training strategy with a lightweight RGB-to-Geometry Adapter that learns to
-                generate pseudo-3D features for accurate geometric reasoning from a standard RGB image.</li>
-              <li>Achieved state-of-the-art performance on MetaFood3D dataset with 17.43% volume MAPE and 15.36
-                energy MAPE, representing 57.9% and 77.4% relative improvements over previous RGB-only methods.</li>
+              <li>Developed a dual-encoder architecture combining ViT-B and ResNet-18 for RGB feature extraction with
+                PointNet for 3D understanding.</li>
+              <li>Introduced an RGB-to-point cloud feature adapter using knowledge distillation, enabling cross-modal
+                feature learning between 2D and 3D representations.</li>
+              <li>Achieved state-of-the-art results on MetaFood3D with 26.87% volume MAPE and 24.89% energy MAPE,
+                outperforming previous best methods by 65% and strong cross-dataset generalization on SimpleFood45.</li>
             </div>
             <div class="publ">
               <ul>
@@ -243,7 +241,7 @@
           <div class="col-sm-9 mb-3">
             <h4 class="pubt">Explainable Transfer Learning Ensemble with Dynamic Weighting for Kidney Disease
               Classification in CT Images</h4>
-            <h4 class="puba">Advisor: Dr. Praveen Kumar</h4>
+            <h4 class="puba">Advisor: Dr. Praveen Kumar | Under review at Elsevier (Array)</h4>
             <div class="pubv">
               <li>Designed a dynamic weighted ensemble architecture combining MobileNetV2, ResNet-50 and EfficientNet-B1
                 for multi-class kidney disease classification on 12,446 CT images.</li>
@@ -267,7 +265,8 @@
           </div>
           <div class="col-sm-9 mb-3">
             <h4 class="pubt">Self-Supervised Medical Image Segmentation with Vector Quantization</h4>
-            <h4 class="puba">Advisor: Dr. Deepak Mishra | Indian Institute of Technology, Jodhpur</h4>
+            <h4 class="puba">Indian Institute of Technology, Jodhpur | Advised by Dr. Deepak Mishra | May 2025 - July
+              2025</h4>
             <div class="pubv">
               <li>Developed a hierarchical vector quantization framework that addresses limited labeled data in medical
                 imaging by learning discrete representations from unlabeled images and using them as structured regu-
@@ -773,8 +772,3 @@
 </body>
 
 </html>
-
-
-
-
-
