@@ -262,8 +262,7 @@
           <em>Advisor: Dr. Ghassan Hamarneh</em>
           <div class="experience-text">
             <li>Developing a 3D U-Net pipeline for automated detection of mitochondria-endoplasmic reticulum contact sites from 3D STED volumes.</li>
-            <li>Leveraging pySTED simulator to generate synthetic training data, augmenting limited annotations and enabling controlled experiments on imaging parameters.</li>
-
+            <li>Leveraging the pySTED simulator to generate synthetic training volumes, augmenting limited annotated data in fluorescence microscopy.</li>
           </div>
         </div>
         <div class="resume-date text-md-right" style="white-space: nowrap; width: 170px;">
@@ -287,11 +286,10 @@
 
 
           <div class="experience-text mb-3">
-            <strong>Prototype-Guided Lightweight Transformer for Patch-Level OSCC Detection</strong><br>
+            <strong>Prototype-Guided Lightweight framework for Patch-Level OSCC Detection</strong><br>
             <em>Advisor: Dr. Bharanidharan N</em>
-            <li>Built a lightweight CNN-Transformer model for patch-level oral cancer detection, optimized for high-resolution histopathology images.</li>
-            <li>Designed a multi-view pretraining strategy using structure-enhanced and frequency-filtered patches to learn discriminative features from unlabeled data.</li>
-            <li>Developed a frequency-based channel weighting, prototype-guided feature learning and a mini-batch graph module to capture texture patterns and relationships across patches.</li>
+            <li>Developed a lightweight histopathology framework for patch-level OSCC detection combining spectral channel recalibration, adaptive prototype alignment and graph-based patch relation modelling.</li>
+            <li>Designed a structure-preserving multi-view contrastive pretraining strategy to learn discriminative features from unlabelled H&E patches.</li>
           </div>
 
           <div class="experience-text mb-3">
@@ -308,11 +306,8 @@
           <div class="experience-text">
             <strong>Explainable AI Framework for Kidney Pathology Classification from CT Scans</strong><br>
             <em>Advisor: Dr. Praveen Kumar</em>
-            <li>Designed a dynamic weighted ensemble combining MobileNetV2, ResNet-50, and EfficientNet-B1 for
-              multi-class kidney disease classification on 12,446 CT images across four diagnostic categories.</li>
-            <li>Implemented explainability framework using Grad-CAM and LIME with domain-specific augmentations
-              to provide interpretable predictions for clinical decision support.</li>
-        
+            <li>Designed a dynamic weighted ensemble of complementary CNN architectures for multi-class kidney disease classification on CT images, combining per-model confidence scores.</li>
+            <li>Integrated Grad-CAM and LIME to produce spatially interpretable predictions, supporting clinical decisionmaking transparency.</li>
           </div>
         </div>
         <div class="resume-date text-md-right" style="white-space: nowrap; width: 170px;">
@@ -342,9 +337,7 @@
               structured regularizers during segmentation fine-tuning on the PH2 dataset.</li>
             <li>Designed three-stage training pipeline integrating VQ-VAE, SimCLR contrastive learning and
               segmentation fine-tuning, with multi-layer quantization capturing features across semantic scales.</li>
-            <li>Achieved 79.76% Dice score with +1.38% consistent improvement across multiple runs, demonstrating
-              the effectiveness of discrete representations as regularizers for medical imaging with limited labeled
-              data.</li>
+            <li>Achieved 79.76% Dice, a +1.38% consistent improvement over baseline without VQ across multiple runs.</li>
           </div>
 
           <div class="experience-text">
