@@ -87,7 +87,7 @@
           <div class="">
             <p class="lead-bio mb-3 text-justify">
 
-              My research focuses on computer vision and deep learning for medical imaging. Currently, I am working on Mitochondria-ER contact site analysis in 3D STED microscopy, developing a deep learning pipeline for MERC detection.
+              My research focuses on computer vision and deep learning for medical imaging. Currently, I am working on the Mitochondria-ER contact site detection in 3D STED microscopy.
 
             <p class="lead">
               <strong>Core Interests:</strong>
@@ -150,7 +150,7 @@
               <strong>Courses: </strong> Artificial Intelligence, Machine Learning, Natural Language Processing, Data
               Mining, Computer Networks, Data Structures and Algorithms, Database Management Systems, Operating Systems,
               Python Programming, Object Oriented Programming.<br>
-              <strong>CGPA: </strong> 8.82/10<br>
+              <strong>CGPA: </strong> 8.81/10<br>
             </div>
           </div>
           <div class="resume-date text-md-right">
@@ -196,25 +196,6 @@
               </a>
             </div>
           </li>
-
-          <li class="pub-item mb-4">
-            <div class="pub-title">
-              Explainable Transfer Learning Ensemble with Dynamic Weighting for Kidney Disease Classification in CT
-              Images
-            </div>
-            <div class="pub-authors">
-              <strong>Darrin Bright</strong>, Praveen Kumar
-            </div>
-            <div class="pub-venue">
-              Under review, Cogent Engineering
-            </div>
-            <div class="pub-links" style="margin-top: 8px;">
-              <a href="https://github.com/darrinbright/Kidney-XAI" target="_blank"
-                style="text-decoration: none; color: #007bff;">
-                [Code]
-              </a>
-            </div>
-          </li>
         </ol>
 
       </div>
@@ -227,6 +208,30 @@
 
       <h2 class="mb-3">Research Experience</h2>
 
+       <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+        <div class="resume-content">
+          <a href="https://www.iith.ac.in/" target="_blank">
+            <h3 class="mb-0 hvr-underline-from-center hvr-wobble-horizontal">
+              <span class="text-primary">Indian Institute of Technology, Kharagpur - </span> West Bengal, India
+            </h3>
+          </a>
+          <div class="subheading">Research Intern</div>
+          <em>Advisor: Dr. Debanjan Das</em>
+          <div class="experience-text">
+            <li>Developing GraphUNet, a graph-augmented U-Net for cuffless blood pressure estimation, integrating beat-level morphological graph representations with multichannel ECG and PPG waveform modelling.
+            </li>
+          </div>
+        </div>
+        <div class="resume-date text-md-right" style="white-space: nowrap; width: 170px;">
+          <span class="text-primary experience-time" style="font-size: 0.9em;">May 2026 - Present</span>
+          <div style="margin-top: 10px;">
+            <div class="brk">
+              <img srcset="img/iith.png" class="hov" width="130" height="130" alt="IIT Hyderabad Logo" /><br>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
         <div class="resume-content">
           <a href="https://www.iith.ac.in/" target="_blank">
@@ -237,7 +242,7 @@
           <div class="subheading">Research Intern</div>
           <em>Advisor: Dr. Krishna Mohan</em>
           <div class="experience-text">
-            <li>Developing federated continual learning frameworks for skin lesion classification by integrating synthetic data replay and distillation techniques to mitigate catastrophic forgetting.
+            <li>Developing a federated continual learning framework for medical image classification in which clients generate privacy-preserving synthetic samples for replay, mitigating catastrophic forgetting under non-IID, privacy-constrained aggregation.
             </li>
           </div>
         </div>
@@ -261,8 +266,8 @@
           <div class="subheading">Research Intern</div>
           <em>Advisor: Dr. Ghassan Hamarneh</em>
           <div class="experience-text">
-            <li>Developing a 3D U-Net pipeline for automated detection of mitochondria-endoplasmic reticulum contact sites from 3D STED volumes.</li>
-            <li>Leveraging the pySTED simulator to generate synthetic training volumes, augmenting limited annotated data in fluorescence microscopy.</li>
+            <li>Developing a deep learning pipeline for automated detection of mitochondria–endoplasmic reticulum contact sites in STED microscopy volumes.</li>
+            <li>Generating training data from both real STED acquisitions and a synthetic pipeline that renders parametric organelle masks into realistic STED-like images via the pySTED simulator.</li>
           </div>
         </div>
         <div class="resume-date text-md-right" style="white-space: nowrap; width: 170px;">
@@ -285,12 +290,13 @@
           <div class="subheading">Undergraduate Researcher</div>
 
 
-          <!-- <div class="experience-text mb-3">
-            <strong>Prototype-Guided Lightweight framework for Patch-Level OSCC Detection</strong><br>
+          <div class="experience-text mb-3">
+            <strong>SPHINX-Net: A Lightweight Histology-Aware Framework for OSCC Detection</strong><br>
             <em>Advisor: Dr. Bharanidharan N</em>
-            <li>Developed a lightweight histopathology framework for patch-level OSCC detection combining spectral channel recalibration, adaptive prototype alignment and graph-based patch relation modelling.</li>
-            <li>Designed a structure-preserving multi-view contrastive pretraining strategy to learn discriminative features from unlabelled H&E patches.</li>
-          </div> -->
+            <li>Developed SPHINX-Net, a lightweight hybrid framework with histology-aware multi-view contrastive pretraining, enabling strong patch-level OSCC detection.</li>
+            <li>Designed a spectral-aware recalibration block that reweights channels by frequency-domain energy to target the nuclear-texture irregularity central to tumour grading.</li>
+            <li>Introduced a prototype-graph head that resolves ambiguous patches through mini-batch graph context while enforcing compact class geometry, without whole-slide-image graphs.</li>
+          </div>
 
           <div class="experience-text mb-3">
             <strong>PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation</strong><br>
