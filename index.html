@@ -271,11 +271,11 @@ patterns in HT1080 and COS-7 cells.</li>
           <div class="subheading">Research Intern</div>
           <em>Advisor: Dr. Debanjan Das</em>
           <div class="experience-text">
-            <li>Developed GraphUNet, encoding beat-level ECG and PPG morphology as graphs within a U-Net for
-cuffless blood pressure estimation.
+            <li>Developed GraphUNet, representing beat-level ECG/PPG morphology as graphs within a U-Net architecture for
+cuffless blood-pressure estimation, enabling explicit modeling of physiological relationships across heartbeats.
             </li>
-            <li>Benchmarked GraphUNet against published state-of-the-art baselines on VitalDB and PulseDB, achieving
-competitive estimation performance with interpretable beat-level graph representations.</li>
+            <li>Evaluated on VitalDB and PulseDB against published baselines, achieving 4.97 mmHg SBP MAE and 2.77 mmHg DBP
+MAE under subject-disjoint, calibrated evaluation, demonstrating competitive cuffless BP estimation performance.</li>
           </div>
         </div>
         <div class="resume-date text-md-right" style="white-space: nowrap; width: 170px;">
@@ -298,8 +298,13 @@ competitive estimation performance with interpretable beat-level graph represent
           <div class="subheading">Research Intern</div>
           <em>Advisor: Dr. Krishna Mohan</em>
           <div class="experience-text">
-            <li>Built a federated continual learning framework combining a global synthetic-data anchor with V-Information
-selective re-distillation, outperforming FedCIL and FedLwF-2T across five MedMNIST modalities.
+            <li> Built a federated continual learning framework integrating a global synthetic-data anchor with V-Information-guided
+selective re-distillation to preserve prior-task knowledge without sharing patient data or maintaining a conventional
+replay buffer.
+            </li>
+            <li>
+              Evaluated across five MedMNIST modalities, improving average final accuracy by 32.12 percentage points and
+reducing average forgetting by 20.26 percentage points over FedCIL.
             </li>
           </div>
         </div>
@@ -326,20 +331,20 @@ selective re-distillation, outperforming FedCIL and FedLwF-2T across five MedMNI
           <div class="experience-text mb-3">
             <strong>SPHINX-Net: A Lightweight Histology-Aware Framework for OSCC Detection</strong><br>
             <em>Advisor: Dr. Bharanidharan N</em>
-            <li>Developed SPHINX-Net, a lightweight hybrid framework with histology-aware multi-view contrastive pretraining, enabling strong patch-level OSCC detection.</li>
-            <li>Designed a spectral-aware recalibration block that reweights channels by frequency-domain energy to target the nuclear-texture irregularity central to tumour grading.</li>
-            <li>Introduced a prototype-graph head that resolves ambiguous patches through mini-batch graph context while enforcing compact class geometry, without whole-slide-image graphs.</li>
+            <li>Developed SPHINX-Net, a lightweight hybrid CNN–Transformer framework for patch-level oral squamous cell
+carcinoma detection, combining histology-aware multi-view contrastive pretraining, spectral channel recalibration,
+and mini-batch prototype-graph refinement.</li>
+            <li>Achieved 96.30% patch-level accuracy with a 1.75M-parameter model at 1,034 FPS.</li>
           </div>
 
           <div class="experience-text mb-3">
             <strong>PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation</strong><br>
             <em>Advisor: Dr. Kanchan Keisham</em>
-            <li>Developed PortionNet, a novel cross-modal knowledge distillation framework that allows RGB models to
-              learn 3D geometric features from point clouds during training, eliminating depth sensor requirements at
-              inference.</li>
-            <li>Designed a dual-mode training strategy with a lightweight RGB-to-Geometry Adapter that learns to
-              generate pseudo-3D features for accurate geometric reasoning from a standard RGB image.</li>
-            <li>Achieved state-of-the-art performance on MetaFood3D and SimpleFood45 datasets, demonstrating effective generalization.</li>
+            <li> Developed PortionNet, a cross-modal knowledge distillation framework that transfers 3D geometric knowledge from
+point clouds to an RGB-only model through a lightweight RGB-to-Geometry Adapter, eliminating depth-sensor
+requirements at inference.</li>
+            <li>Achieved SOTA on MetaFood3D, with 17.43% volume MAPE and 15.36% energy MAPE, reducing errors by 57.9%
+and 77.4% relative to the previous best; further achieved 12.17% energy MAPE on the SimpleFood45 dataset.</li>
           </div>
         </div>
         <div class="resume-date text-md-right" style="white-space: nowrap; width: 170px;">
@@ -415,8 +420,7 @@ selective re-distillation, outperforming FedCIL and FedLwF-2T across five MedMNI
               analysis.</li>
             <li>Implemented website structure analysis with BeautifulSoup for HTML parsing and extraction of elements,
               creating automated solutions for identifying on-page optimization opportunities and generating technical
-              SEO assets
-              including sitemaps and robots.txt files.</li>
+              SEO assets including sitemaps and robots.txt files.</li>
           </div>
 
           <div class="subheading">Generative AI & ML Engineer - Intern</div>
